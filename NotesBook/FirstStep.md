@@ -6,4 +6,4 @@
 注意到界面中有一个：Julia> 提示符，这就是我们控制台输入的入口处。
 # 试运行经典程序
  安装好了以后，试运行一下经典的程序：在Julia>提示符下输入：print("Hello,world!\n")或者println("Hello,World!")然后按回车键，不出意外的话就会得到计算机的回应。
- ![](https://github.com/jasonjancao/JuliaLearningNotes/blob/master/NotesBook/fig/HelloWorld.png)
+ ![helloworld](https://github.com/jasonjancao/JuliaLearningNotes/blob/master/NotesBook/fig/HelloWorld.png)
