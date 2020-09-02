@@ -4,6 +4,22 @@
 不管你用什么安装，你最终会在控制台程序看到如下画面:
 ![JuliaStart](https://github.com/jasonjancao/JuliaLearningNotes/blob/master/NotesBook/fig/JuliaStart.png)
 注意到界面中有一个：Julia> 提示符，这就是我们控制台输入的入口处。
-# 试运行经典程序
- 安装好了以后，试运行一下经典的程序：在Julia>提示符下输入：print("Hello,world!\n")或者println("Hello,World!")然后按回车键，不出意外的话就会得到计算机的回应。
+# 运行经典程序
+ 安装好了以后，试运行一下经典的程序：在Julia>提示符下输入：print("Hello,world!\n")或者println("Hello,World!")然后按回车键，不出意外的话就会得到计算机的回应（hello world 的程序是从C开始的，几乎每一个程序员练习编程软件久负盛名的传统）。
  ![helloworld](https://github.com/jasonjancao/JuliaLearningNotes/blob/master/NotesBook/fig/HelloWorld.png)
+ 
+ 
+```julia
+help?> println
+search: println printstyled print sprint isprint
+
+  println([io::IO], xs...)
+
+  Print (using print) xs followed by a newline. If io is not supplied, prints to stdout.
+
+  Examples
+  ≡≡≡≡≡≡≡≡≡≡
+
+  julia> println("Hello, world")
+  Hello, world
+```
