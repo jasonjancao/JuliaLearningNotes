@@ -8,7 +8,9 @@
  安装好了以后，试运行一下经典的程序：在Julia>提示符下输入：print("Hello,world!\n")或者println("Hello,World!")然后按回车键，不出意外的话就会得到计算机的回应（hello world 的程序是从C开始的，几乎每一个程序员练习编程软件久负盛名的传统）。
  ![helloworld](https://github.com/jasonjancao/JuliaLearningNotes/blob/master/NotesBook/fig/HelloWorld.png)
  
- 需要说明的是`println()`是`print()`函数的自带换行符的版本，所以在"print"后面加字母"ln",不是数字"1n"，在julia>提示符下输入"?",就进入了帮助模式，继续输入"println"回车，就会看到`println()`的帮助文件，并自动回到控制台模式。
+ 需要说明的是`println()`是`print()`函数的自带换行符的版本，所以在"print"后面加字母"l+n",不是数字"1+n"。
+# 控制台的其他3种工作模式
+ - 帮助模式(help?>):在julia>提示符下输入"?"（注意英文问号,不是中文的问号）就进入了帮助模式，继续输入"println"回车，就会看到`println()`的帮助文件，并自动回到julia模式。
 ```julia
 help?> println
 search: println printstyled print sprint isprint
@@ -23,3 +25,8 @@ search: println printstyled print sprint isprint
   julia> println("Hello, world")
   Hello, world
 ```
+
+- pkg>模式：在julia模式下，输出右中括号"]",就会进入程序包的管理模式，在此模式下可以进行各种程序包的安装、移除、更新、固定等工作。退出pkg模式只需在`*pkg>`提示符下按退格键即可，也可以同时按"ctrl"和"c"键(为方便输入，以后把同时按键写成如"ctrl"+"c"的形式)退出pkg模式。包管理模式以后还会详述。
+
+- shell模式，在 julia>提示符输入英文分号`;`，就会进入到 shell 模式。这种模式下可以执行普通的 Shell 命令。当我们需要时不时地操纵文件系统时，这样会很方便，省去了我们在多个命令行之间切换的工作量。与帮助模式类似，在执行完一个 shell 命令之后，REPL 环境会自动地退出 shell 模式并切换回 julia 模式。
+
